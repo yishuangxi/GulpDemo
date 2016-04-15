@@ -1,1 +1,4 @@
-console.log('b.js');
+(function(){
+	var varb = 'hello b'
+	console.log(varb);
+})();

@@ -18,6 +18,8 @@
   "homepage": "https://github.com/yishuangxi/GulpDemo#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0"
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3"
   }
 }

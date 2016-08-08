@@ -11,6 +11,7 @@ var gulp_cssnano = require('gulp-cssnano')
 var gulp_md5_plus = require('gulp-md5-plus')
 var gulp_concat = require('gulp-concat')
 var gulp_clean = require('gulp-clean')
+var gulp_css_spriter = require('gulp-css-spriter')
 
 gulp.task('html:include', function(){
     return gulp.src('src/html/*.html')
@@ -27,7 +28,12 @@ gulp.task('css:common', function(){
 })
 
 gulp.task('css', ['html:include', 'css:common'], function(){
+    var time = new Date().getTime()
     return gulp.src('src/css/*.css')
+        .pipe(gulp_css_spriter({
+            'spriteSheet': './dest/image/common-sprite-'+time+'.png',
+            'pathToSpriteSheetFromCSS': '../image/common-sprite-'+time+'.png'
+        }))
         .pipe(gulp_autoprefixer())
         .pipe(gulp_cssnano())
         .pipe(gulp_md5_plus(5, 'dest/html/*.html'))
@@ -43,8 +49,9 @@ gulp.task('js', ['html:include'], function(){
 gulp.task('image:common', ['html:include'], function(){
     return gulp.src('src/image/common/*.png')
         .pipe(gulp_md5_plus(5, 'dest/html/*.html'))
-        .pipe(gulp.dest('dest/image'))
+        .pipe(gulp.dest('dest/image/common'))
 })
+
 
 gulp.task('image', ['image:common'])
 

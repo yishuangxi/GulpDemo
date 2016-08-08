@@ -1,0 +1,15 @@
+body{
+    color: red;
+}
+
+body{
+    color: blue;
+}
+
+.icon-wb{
+    background-image: url("../image/icon-wb.png");
+}
+
+.icon-wb-active{
+    background-image: url("../image/icon-wb-active.png");
+}

@@ -1,0 +1,14 @@
+body{
+    color: blue;
+}
+
+.icon-arrow-bottom{
+    background-image: url("../image/icon-arrow-bottom.png");
+}
+.icon-qq{
+    background-image: url("../image/icon-qq.png");
+}
+
+.icon-wx{
+    background-image: url("../image/icon-wx.png");
+}

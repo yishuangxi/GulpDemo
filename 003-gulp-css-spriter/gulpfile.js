@@ -7,8 +7,8 @@ var spriter = require('gulp-css-spriter')
 gulp.task('spriter', function(){
     gulp.src('src/css/*.css')
         .pipe(spriter({
-            'spriteSheet': './dest/image/sprite.png',
-            'pathToSpriteSheetFromCSS': '../image/sprite.png'
+            'spriteSheet': './dest/image/icon/sprite.png',
+            'pathToSpriteSheetFromCSS': '../image/icon/sprite.png'
         }))
         .pipe(gulp.dest('dest/css'))
 })

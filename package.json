@@ -19,15 +19,27 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-cdn-absolute-path": "0.0.6",
+    "gulp-cdn-ref": "^0.4.1",
+    "gulp-cdn-replace": "^0.3.0",
     "gulp-clean": "^0.3.2",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-css-spriter": "^0.3.3",
     "gulp-cssnano": "^2.1.2",
+    "gulp-each": "^0.2.0",
+    "gulp-extract-css": "0.0.7",
     "gulp-file-include": "^0.14.0",
+    "gulp-foreach": "^0.1.0",
     "gulp-md5-plus": "^0.2.5",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rev": "^7.1.0",
+    "gulp-rev-collector": "^1.0.5",
+    "gulp-spritesmith": "0.0.2",
     "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.6",
     "gulp-webpack": "^1.5.0",
+    "sprity": "^1.0.8",
     "webpack": "^1.13.1"
   }
 }

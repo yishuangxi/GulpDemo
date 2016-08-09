@@ -1,0 +1,17 @@
+div{
+    color: red;
+}
+input:hover{
+    border:1px solid red;
+}
+.index{
+    color: red;
+}
+
+.about{
+    color: blue;
+}
+
+.a{
+    font-size: 20px;
+}

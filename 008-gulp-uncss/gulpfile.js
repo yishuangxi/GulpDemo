@@ -10,5 +10,5 @@ gulp.task('default', function(){
         .pipe(gulp_uncss({
             html: ['src/html/index.html', 'src/html/about.html']
         }))
-        .pipe(gulp.dest('dest'))
+        .pipe(gulp.dest('dest/css'))
 })

@@ -22,3 +22,5 @@ gulp.task('md5:image', function(){
         .pipe(md5(10, 'dest/html/*.html'))
         .pipe(gulp.dest('dest/image'))
 })
+
+gulp.task('default', ['md5:css', 'md5:js', 'md5:image'])
